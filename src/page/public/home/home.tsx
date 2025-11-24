@@ -19,7 +19,7 @@ export default function Home() {
           <Typography variant="h5" style={{ fontWeight: "600" }}>
             {t("WordTitle")}
           </Typography>
-          <Typography variant="p" >
+          <Typography variant="body1" >
             {t("WordText")}
           </Typography>
         </Stack>
@@ -38,7 +38,7 @@ export default function Home() {
               <Typography variant="h5" color={"#2d5cf7ff"}>
                 20 {t("Mln")}
               </Typography>
-              <Typography variant="p">
+              <Typography variant="body1">
                 {t("Workforce")}
               </Typography>
             </Stack>
@@ -47,7 +47,7 @@ export default function Home() {
               <Typography variant="h5" color={"#2d5cf7ff"}>
                 99%
               </Typography>
-              <Typography variant="p">
+              <Typography variant="body1">
                 {t("Literacy")}
               </Typography>
             </Stack>
@@ -58,7 +58,7 @@ export default function Home() {
               <Typography variant="h5" color={"#2d5cf7ff"}>
                 29
               </Typography>
-              <Typography variant="p">
+              <Typography variant="body1">
                 {t("Average")}
               </Typography>
             </Stack>
@@ -67,7 +67,7 @@ export default function Home() {
               <Typography variant="h5" color={"#2d5cf7ff"}>
                 83%
               </Typography>
-              <Typography variant="p">
+              <Typography variant="body1">
                 {t("Internet_penetration")}
               </Typography>
             </Stack>
