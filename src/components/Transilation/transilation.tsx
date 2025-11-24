@@ -9,11 +9,9 @@ import enUrl from "../../assets/img/uk.png";
 import ruUrl from "../../assets/img/rus.png";
 import uzUrl from "../../assets/img/uzb.png";
 import { useEffect, useState } from 'react';
-import { useMediaQuery } from '@mui/material';
 
 export default function BasicSelect() {
-    
-  const Headertopsize = useMediaQuery(("max-width:405px"))
+
     const [lang, setlang] = useState(loadState("lang") || "en")
     useEffect(() => {
         i18n.changeLanguage(lang);
@@ -38,30 +36,30 @@ export default function BasicSelect() {
                         "& .MuiSelect-select": {
                             padding: "2px 10px",
                             paddingTop: "10px",
- textOverflow: "clip",
+                            textOverflow: "clip",
                         },
                     }}
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
-                    
+
                     value={loadState("lang") || "en"}
                     label="En"
                     onChange={handleChange}
                 >
                     <MenuItem value={"en"}>
 
-                        <img style={{  textOverflow: "clip", width: "30px" }} src={enUrl} alt="en" />
+                        <img style={{ textOverflow: "clip", width: "30px" }} src={enUrl} alt="en" />
                     </MenuItem>
                     <MenuItem value={"ru"}>
 
-                        <img style={{  textOverflow: "clip", width: "30px" }} src={ruUrl} alt="ru" />
+                        <img style={{ textOverflow: "clip", width: "30px" }} src={ruUrl} alt="ru" />
                     </MenuItem>
                     <MenuItem value={"uz"}>
 
-                        <img style={{  textOverflow: "clip", width: "30px" }} src={uzUrl} alt="uz" />
+                        <img style={{ textOverflow: "clip", width: "30px" }} src={uzUrl} alt="uz" />
                     </MenuItem>
                 </Select>
-                
+
             </FormControl>
         </Box>
     );

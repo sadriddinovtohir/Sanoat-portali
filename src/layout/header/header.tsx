@@ -1,5 +1,5 @@
 import { DarkModeOutlined, LightModeOutlined } from "@mui/icons-material"
-import { Box, Button, Container, FormControl, InputLabel, MenuItem, Modal, Select, Stack, TextField, Typography, useMediaQuery, useTheme } from "@mui/material"
+import { Box, Button, Container,  Modal, Stack, TextField, Typography, useMediaQuery, useTheme } from "@mui/material"
 import type React from "react"
 import { useEffect, useState } from "react";
 import CurrencyRates from "../../components/CurrencyRates/currencyRate";
