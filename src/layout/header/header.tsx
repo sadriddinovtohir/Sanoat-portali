@@ -1,5 +1,13 @@
 import { DarkModeOutlined, LightModeOutlined } from "@mui/icons-material"
-import { Box, Button, Container,  Modal, Stack, TextField, Typography, useMediaQuery, useTheme } from "@mui/material"
+import { Box } from "@mui/material"
+import { Button } from "@mui/material"
+import { Container } from "@mui/material"
+import { Modal } from "@mui/material"
+import { Stack } from "@mui/material"
+import { TextField, } from "@mui/material"
+import { Typography } from "@mui/material"
+import { useMediaQuery } from "@mui/material"
+import { useTheme } from "@mui/material"
 import type React from "react"
 import { useEffect, useState } from "react";
 import CurrencyRates from "../../components/CurrencyRates/currencyRate";
@@ -62,12 +70,12 @@ const Header: React.FC<headerProps> = ({ setmode }) => {
   return (
     <Stack style={{ width: "100%" }}>
       <Container>
-          <Stack style={{
+        <Stack style={{
           flexDirection: "row",
-          justifyContent: !size ? "space-between" :  "center",
+          justifyContent: !size ? "space-between" : "center",
           alignItems: "center",
-          flexWrap:"wrap",
-          
+          flexWrap: "wrap",
+
         }}>
           <div
             style={{
@@ -75,7 +83,7 @@ const Header: React.FC<headerProps> = ({ setmode }) => {
               fontWeight: 600,
               textAlign: "center",
               color: "#6366F1",
-          paddingTop:"10px"
+              paddingTop: "10px"
             }}
           >
             {time}
@@ -135,7 +143,7 @@ const Header: React.FC<headerProps> = ({ setmode }) => {
                 top: '50%',
                 left: '50%',
                 transform: 'translate(-50%, -50%)',
-                width: modalsize ?  300 : 400,
+                width: modalsize ? 300 : 400,
                 minHeight: 100,
                 borderRadius: 2,
                 bgcolor: 'background.paper',
@@ -167,8 +175,8 @@ const Header: React.FC<headerProps> = ({ setmode }) => {
             </Modal>
 
           </Stack>
-        </Stack> 
-        
+        </Stack>
+
       </Container>
       <Box sx={{ width: "100%", height: "150px" }}>
         <img

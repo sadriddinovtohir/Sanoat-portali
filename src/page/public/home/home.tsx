@@ -1,4 +1,8 @@
-import { Box, Container, Stack, Typography, useMediaQuery } from "@mui/material";
+import { Box } from "@mui/material";
+import { Container } from "@mui/material";
+import { Stack } from "@mui/material";
+import { Typography } from "@mui/material";
+import { useMediaQuery } from "@mui/material";
 import { t } from "../../../utils/i18n";
 import sanoat from "../../../assets/img/sanoatimg1.png"
 import EngineeringIcon from "@mui/icons-material/Engineering";
@@ -15,21 +19,21 @@ export default function Home() {
   return (
     <Container>
       <Stack style={{ flexDirection: "row", alignItems: "center", justifyContent: size ? "center" : "space-between", gap: size ? "50px" : "", flexWrap: sizes ? "nowrap" : "wrap" }}>
-        <Stack style={{ maxWidth: "400px", gap: "10px" }}>
-          <Typography variant="h5" style={{ fontWeight: "600" }}>
+        <Stack style={{ maxWidth: "600px", gap: "10px" }}>
+          <Typography variant="h4" style={{ fontWeight: "600" }}>
             {t("WordTitle")}
           </Typography>
-          <Typography variant="body1" >
+          <Typography variant="body1"  style={{fontSize:"20px"}}>
             {t("WordText")}
           </Typography>
         </Stack>
         <Stack  >
-          <img style={{ maxWidth: imgSize ? "300px" : "400px", borderRadius: "10px", justifyContent:"center" }} src={sanoat} alt="img" />
+          <img style={{ maxWidth: imgSize ? "300px" : "400px", borderRadius: "10px", justifyContent: "center" }} src={sanoat} alt="img" />
         </Stack>
       </Stack>
       <Stack style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-evenly", flexWrap: "wrap" }}>
         <Box>
-          <img style={{maxWidth:imgSize ? "300px" : "400px"}} src={global} alt="" />
+          <img style={{ maxWidth: imgSize ? "300px" : "400px" }} src={global} alt="" />
         </Box>
         <Stack gap={"50px"} direction={"row"} flexWrap={"wrap"} justifyContent={"center"} >
           <Stack spacing={2}>

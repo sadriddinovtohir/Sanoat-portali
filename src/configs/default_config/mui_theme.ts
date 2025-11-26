@@ -16,6 +16,7 @@ export const lightTheme = createTheme({
         primary:{main :COLORS.titletext},
         background :{default : COLORS.white},
         text:{primary:COLORS.textGrey, secondary:COLORS.btn},
+        info:{main:COLORS.infoMain},
     }
 })
 export const darkTheme = createTheme({
@@ -25,6 +26,7 @@ export const darkTheme = createTheme({
         primary:{main : "#000a3cff"},
         background :{default : "#00000aff"},
         text:{primary:COLORS.white, secondary:COLORS.btn},
+        info:{main:COLORS.infoMain},
         
     }
 })

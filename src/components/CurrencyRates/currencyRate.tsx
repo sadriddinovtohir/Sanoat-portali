@@ -1,4 +1,7 @@
-import { CircularProgress, Stack, Typography, useMediaQuery } from "@mui/material";
+import { CircularProgress  } from "@mui/material";
+import { Stack } from "@mui/material";
+import {  Typography } from "@mui/material";
+import {  useMediaQuery } from "@mui/material";
 import  { useState, useEffect } from "react";
 
 const CurrencyRates = () => {
