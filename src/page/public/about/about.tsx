@@ -21,6 +21,7 @@ export default function About() {
     autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1350,
