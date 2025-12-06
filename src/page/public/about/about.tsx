@@ -127,10 +127,59 @@ export default function About() {
           </Slider>
         </Stack>
       </Container>
-      <Stack pt={"40px"}>
-        <Stack justifyContent={"center"} alignItems={"center"} style={{ height: "800px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat",  backgroundImage: `url(${sliderimg3})` }}>
+
+      <Stack
+    style={{
+          marginTop: 40,
+          height: "auto",
+          paddingBottom: "40px",
+          display: "flex",
+          alignItems: "center",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          flexWrap: "wrap",
+          backgroundImage:`linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)), url(${sliderimg3})`,
+          color: "#fff",
+          paddingTop: "70px",
+        }}
+      >
+        <Container>
+          <Typography variant="h3" fontWeight="bold">
+            {t("Work_with")}
+          </Typography>
+          <Typography variant="h6" sx={{ maxWidth: "700px", mt: 2 }}>
+            {t("Lorem")}
+          </Typography>
+
+          <Stack direction="row" gap={"20px"} textAlign={"center"}  justifyContent={"center"} flexWrap={"wrap"} spacing={4} mt={4}>
+            <Stack>
+              <Typography variant="h3" fontWeight="bold">
+                12
+              </Typography>
+              <Typography variant="body1">{t("Offices_worldwide")}</Typography>
+            </Stack>
+            <Stack>
+              <Typography variant="h3" fontWeight="bold">
+                300+
+              </Typography>
+              <Typography variant="body1">{t("Full_time_colleagues")}</Typography>
+            </Stack>
+              <Stack>
+                <Typography variant="h3" fontWeight="bold">
+                  40
+                </Typography>
+                <Typography variant="body1">{t("Hours_per_week")}</Typography>
+              </Stack>
+              <Stack>
+                <Typography variant="h3" fontWeight="bold">
+                  Unlimited
+                </Typography>
+                <Typography variant="body1">{t("Paid_time_off")}</Typography>
+              </Stack>
+          </Stack>
+        </Container>
       </Stack>
-      </Stack>
+
     </Box>
   )
 }

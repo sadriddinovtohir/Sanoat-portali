@@ -41,7 +41,10 @@ const Header: React.FC<headerProps> = ({ setmode }) => {
   }
 
   const handelsubmitModal = () => {
-    if (MODE == "light") {
+    if(!MODE){
+    saveState("mod", "light")
+      setmode("light")
+    }else if (MODE == "light") {
       saveState("mod", "dark")
       setmode("dark")
     } else {
@@ -94,7 +97,7 @@ const Header: React.FC<headerProps> = ({ setmode }) => {
           <Stack>
             <CurrencyRates />
           </Stack>
-          <Stack style={{ backgroundColor: theme.palette.mode, paddingTop: "20px", paddingBottom: "10px", flexDirection: "row", gap: "10px" }}>
+          <Stack style={{  paddingTop: "20px", paddingBottom: "10px", flexDirection: "row", gap: "10px" }}>
 
 
 
