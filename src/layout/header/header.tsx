@@ -31,7 +31,7 @@ const Header: React.FC<headerProps> = ({ setmode }) => {
   const [time, setTime] = useState(new Date().toLocaleTimeString());
   const [open, setopen] = useState<boolean>(false);
 
-  const MODE = loadState("mod")
+  const MODE = loadState("mod") || "light";
   const { handleSubmit, reset, register } = useForm<headerinput>();
   const Submit = (data: headerinput) => {
     console.log(data.id, data.password);
