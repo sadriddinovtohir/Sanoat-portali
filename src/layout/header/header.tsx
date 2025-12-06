@@ -121,7 +121,7 @@ const Header: React.FC<headerProps> = ({ setmode }) => {
                 padding: "0",
               }}
             >
-              {MODE == "light" ? <div style={{ color: "#fff", paddingTop: "4px" }}><LightModeOutlined /> </div> : <div style={{ color: "#fff", paddingTop: "4px" }}><DarkModeOutlined /></div>}
+              {MODE == "light" && MODE == "" ? <div style={{ color: "#fff", paddingTop: "4px" }}><LightModeOutlined /> </div> : <div style={{ color: "#fff", paddingTop: "4px" }}><DarkModeOutlined /></div>}
             </button>
             <button onClick={handelUser} style={{
               paddingTop: "4px",
